@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { useMemo } from "react";
+import { themeSettings } from "./themes";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const theme = useMemo(() => createTheme(themeSettings), [])
   return (
-    <div className='App'>
+    <div className='app'>
+        <h1>hi</h1>
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+        </ThemeProvider>
     </div>
   )
 }
