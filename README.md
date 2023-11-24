@@ -3,7 +3,7 @@
 Following a tutorial to learn how to build
 A Finance web app with Typescript and the MERN stack
 
-# Client
+## Client
 Using react dom to create basic routes and learning how to style the client side with react
 
 # References
